@@ -1,4 +1,4 @@
-package const_test
+package test
 
 import (
 	"testing"
@@ -23,7 +23,7 @@ func TestPoint(t *testing.T) {
 	t.Logf("%T,%T", a, aPtr) //int,*int
 }
 
-func TestString(t *testing.T) {
+func TestStringT(t *testing.T) {
 	var s string
 	t.Log("*" + s + "*")
 	t.Log(len(s))

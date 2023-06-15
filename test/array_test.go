@@ -1,4 +1,4 @@
-package array_test
+package test
 
 import "testing"
 
@@ -25,7 +25,7 @@ func TestArrayTravel(t *testing.T) {
 func TestArraySection(t *testing.T) {
 	arr3 := [...]int{1, 2, 3, 4, 5}
 	arr3Sec := arr3[:2]
-	arr3Sec2 := arr3[1:len(arr3)]
+	var arr3Sec2 = arr3[1:len(arr3)]
 	arr3Sec3 := arr3[1:]
 	t.Log(arr3Sec, "*", arr3Sec2, "*", arr3Sec3) //[1 2] * [2 3 4 5] * [2 3 4 5]
 }
